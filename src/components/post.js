@@ -21,6 +21,7 @@ const Post = ({ id }) => {
   return (
     <div>
       <h1>{post.title}</h1>
+      <img src={post.src}/>
       <p>{post.text}</p>
       <p>
         <em>Published {new Date(post.published_at).toLocaleString()}</em>

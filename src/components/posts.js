@@ -18,13 +18,15 @@ const Posts = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Posts</h1>
+    <div id="main">
+      <h1 id="main-page">Posts</h1>
       {posts.map((post) => (
-        <div key={post.id}>
+        <div id="posts" key={post.id}>
           <h2>
             <Link to={`/posts/${post.id}`}>{post.title}</Link>
           </h2>
+          <div><img src={post.src}/></div>
+          <iframe src={post.iframe}></iframe>
         </div>
       ))}
     </div>

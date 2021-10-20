@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+
+#main {
+    margin-top: 60px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#posts{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img {
+    
+    height: 200px;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main-page {
+    position: fixed;
+    top: 10px;
+}
